@@ -280,7 +280,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c8c9b544b4eca34d8d25d4ac9038930, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  f_ScrollSpeed: -3
+  g_Sky: {fileID: 0}
+  f_SkyScrollSpeed: 0
+  f_SkySize: 0
+  f_SkyClip: 0
+  g_Tile: {fileID: 0}
+  f_TileScrollSpeed: 0
+  f_TileSize: 0
+  f_TileClip: 0
 --- !u!1 &620342338
 GameObject:
   m_ObjectHideFlags: 0
@@ -917,7 +924,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c8c9b544b4eca34d8d25d4ac9038930, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  f_ScrollSpeed: -0.1
+  g_Sky: {fileID: 0}
+  f_SkyScrollSpeed: 0
+  f_SkySize: 0
+  f_SkyClip: 0
+  g_Tile: {fileID: 0}
+  f_TileScrollSpeed: 0
+  f_TileSize: 0
+  f_TileClip: 0
 --- !u!1 &1643710032
 GameObject:
   m_ObjectHideFlags: 0

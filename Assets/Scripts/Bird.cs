@@ -11,6 +11,7 @@ public class Bird : MonoBehaviour
     public bool b_IsDead = false;
     public Text Score;
     public float f_Animation = 1.5f;
+    public Score ScoreMgr;
 
     private Rigidbody2D m_Rigidbody;
     private Animator m_Animator;
@@ -19,6 +20,7 @@ public class Bird : MonoBehaviour
 
     private void Awake()
     {
+        Background.End = false;
         m_Rigidbody = GetComponent<Rigidbody2D>();
         m_Animator = GetComponent<Animator>();
     }
@@ -66,8 +68,10 @@ public class Bird : MonoBehaviour
             GameOver();
     }
 
-    void GameOver()
+    public void GameOver()
     {
+        ScoreMgr.Count(m_iScore);
+        Background.End = true;
         SceneManager.LoadScene("ScoreScene");
     }
 }

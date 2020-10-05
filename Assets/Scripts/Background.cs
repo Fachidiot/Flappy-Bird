@@ -22,6 +22,8 @@ public class Background : MonoBehaviour
     private GameObject[] m_BgTiles = new GameObject[3];
     private int m_iSkyIndex = 0;
     private int m_iTileIndex = 0;
+    private static bool m_bEnd = false;
+    public static bool End { get { return m_bEnd; } set { m_bEnd = value; } }
 
     private void Start()
     {
@@ -35,6 +37,8 @@ public class Background : MonoBehaviour
 
     void Update()
     {
+        if (m_bEnd)
+            return;
         Sky();
         Tile();
     }
